@@ -19,7 +19,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           source: "."
-          target: "/home/ubuntu/femadi-showroom"
+          target: "/home/ubuntu/femadi-demo"
           rm: true
 
       - name: Build and run Docker on server
@@ -29,6 +29,6 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd /home/ubuntu/showroom-3d
+            cd /home/ubuntu/famadi-demo
             docker-compose down
             docker-compose up -d --build

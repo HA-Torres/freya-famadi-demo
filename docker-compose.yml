@@ -7,7 +7,7 @@ services:
     restart: always
 
     volumes:
-      - /home/ubuntu/famadi-showroom/src:/usr/share/nginx/html:ro
+      - /home/ubuntu/famadi-demo/src:/usr/share/nginx/html:ro
 
     labels:
       - "traefik.enable=true"
