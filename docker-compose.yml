@@ -3,11 +3,11 @@ version: "3.9"
 services:
   showroom:
     image: nginx:alpine
-    container_name: famadi-showroom
+    container_name: famadi-demo
     restart: always
 
     volumes:
-      - /home/ubuntu/famadi-demo/src:/usr/share/nginx/html:ro
+      - /home/ubuntu/famadi-demo/:/usr/share/nginx/html:ro
 
     labels:
       - "traefik.enable=true"
