@@ -19,7 +19,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           source: "."
-          target: "/home/ubuntu/femadi-demo"
+          target: "/home/ubuntu/famadi-demo"
           rm: true
 
       - name: Build and run Docker on server
