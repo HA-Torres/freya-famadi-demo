@@ -1,20 +1,18 @@
 version: "3.9"
 
 services:
-  showroom:
+  famadi-demo:
     image: nginx:alpine
     container_name: famadi-demo
     restart: always
-
     volumes:
-      - /home/ubuntu/famadi-demo/:/usr/share/nginx/html:ro
-
+      - ./src:/usr/share/nginx/html:ro
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.showroom-famadi.rule=Host(`famadi-demo.paketartes.com`)"
-      - "traefik.http.routers.showroom-famadi.entrypoints=websecure"
-      - "traefik.http.routers.showroo-famadi.tls.certresolver=letsencrypt"
-
+      - "traefik.http.routers.famadi-demo.rule=Host(`famadi-demo.paketartes.com`)"
+      - "traefik.http.routers.famadi-demo.entrypoints=websecure"
+      - "traefik.http.routers.famadi-demo.tls.certresolver=letsencrypt"
+      - "traefik.http.services.famadi-demo.loadbalancer.server.port=80"
     networks:
       - traefik
 
