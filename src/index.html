@@ -1,50 +1,606 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html class="no-js" lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Famadi</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <meta charset="utf-8">
+    
+    <!--====== Title ======-->
+    <title>FAMADI</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
         
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
         
-        .container {
-            text-align: center;
-            background: white;
-            padding: 50px;
-            border-radius: 10px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-        }
+    <!--====== Animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
         
-        h1 {
-            color: #667eea;
-            font-size: 48px;
-            margin-bottom: 20px;
-            letter-spacing: 2px;
-        }
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
         
-        p {
-            color: #666;
-            font-size: 18px;
-        }
-    </style>
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+    
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
 </head>
+
 <body>
-    <div class="container">
-        <h1>FAMADI</h1>
-        <p>Bienvenido a Famadi SRC</p>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+    
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    <section class="header_area">
+        <div class="header_navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/logo-letras.png" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="#home">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#about">Nosotros</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#services">Servicios</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#counter">Portafolio</a>
+                                    </li>
+                                    <!-- <li class="nav-item">
+                                        <a class="page-scroll" href="#team">Team</a>
+                                    </li> -->
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#testimonial">Acreditaciones</a>
+                                    </li>                                    
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#contact">Contacto</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- header navbar -->
+
+        <div id="home" class="header_slider">
+            <div class="single_slider bg_cover d-flex align-items-center" style="background-image: url(assets/images/slider-1.jpg)">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-md-10">
+                            <div class="slider_content">
+                                <h2 class="slider_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">INSPECCION Y SERVICIOS</h2>
+                                <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">Trabajos confiables y seguros</p>
+                                <a href="https://rebrand.ly/arch-ui" rel="nofollow" class="main-btn wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.8s">Contactanos</a>
+                            </div> <!-- slider content -->
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- single slider -->
+        </div> <!-- header slider -->
+    </section>
+
+    <!--====== HEADER PART ENDS ======-->
+    
+    <!--====== FEATURES PART START ======-->
+
+    <section id="features" class="features_area pt-100 pb-130">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="single_features text-center mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                        <div class="features_image">
+                            <img src="assets/images/features-1.jpg" alt="features">
+                        </div>
+                        <div class="features_content">
+                            <h4 class="features_title"><a href="#">Pruebas NO destructivas</a></h4>
+                        </div>
+                    </div> <!-- single features -->
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="single_features text-center mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        <div class="features_image">
+                            <img src="assets/images/features-2.jpg" alt="features">
+                        </div>
+                        <div class="features_content">
+                            <h4 class="features_title"><a href="#">Buceo Industrial</a></h4>
+                        </div>
+                    </div> <!-- single features -->
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="single_features text-center mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                        <div class="features_image">
+                            <img src="assets/images/features-3.jpg" alt="features">
+                        </div>
+                        <div class="features_content">
+                            <h4 class="features_title"><a href="#">Trabajo en alturas</a></h4>
+                        </div>
+                    </div> <!-- single features -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== FEATURES PART ENDS ======-->
+    
+    <!--====== ABOUT PART START ======-->
+
+    <section id="about" class="about_area pt-80 pb-130">
+        <div class="about_bg d-none d-lg-block">
+            <div class="about_bg_image bg_cover" style="background-image: url(assets/images/about_bg.jpg)"></div>
+        </div> <!-- about bg -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about_image mt-50 wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        <img src="assets/images/about_image.jpg" alt="About">
+                    </div> <!-- about image -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="about_content mt-50 wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        <h3 class="sub_title"><span>24</span> Años de Experiencia</h3>
+                        <h4 class="main_title">Proporcionando servicios de calidad a las empresas navieras y de la industria del petróleo</h4>
+                        <!-- <p></p> -->
+                        <!-- <a href="#" class="main-btn">Read More</a> -->
+                    </div> <!-- about content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== ABOUT PART ENDS ======-->
+    
+    <!--====== SERVICES PART START ======-->
+
+    <section id="services" class="services_area pt-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section_title">
+                        <h4 class="title">Nuestros Servicios</h4>
+                    </div>
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <!-- 1 -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_services mt-50 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                        <div class="services_icon">
+                            <i class="lni lni-ruler"></i>
+                        </div>
+                        <div class="services_content">
+                            <h4 class="title">Medición de Espesores</h4>
+                            <p>Para localización y delimitación de áreas con bajo espesor ocasionadas por corrosión o desgaste mecánico en equipos y materiales en servicio, en estructuras tubulares y no tubulares, líneas de proceso, recipientes a presión, tendidos de líneas, herramientas de perforación, mecanismos y estructura de grúas, placas y estructurales de plataformas y embarcaciones, etc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_services mt-50 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        <div class="services_icon">
+                            <i class="lni lni-helmet"></i>
+                        </div>
+                        <div class="services_content">
+                            <h4 class="title">Ultrasonido Industrial</h4>
+                            <p>Para la detección de discontinuidades generadas durante el proceso de soldaduras nuevas o de equipos y materiales en servicio, en estructuras tubulares y no tubulares, líneas de proceso, recipientes a presión, tendidos de líneas, herramientas de perforación, mecanismos y estructura de grúas, placas y estructurales de plataformas y embarcaciones, etc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_services mt-50 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                        <div class="services_icon">
+                            <i class="lni lni-magnet"></i>
+                        </div>
+                        <div class="services_content">
+                            <h4 class="title">Partículas Magnéticas</h4>
+                            <p>Inspección de soldaduras en acero al carbón, antes, durante y después de su aplicación, soldaduras en servicio de estructuras tubulares y no tubulares, componentes de grúas, herramientas de perforación, espárragos, tornillos, ganchos, pernos, poleas, etc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_services mt-50 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">
+                        <div class="services_icon">
+                            <i class="lni lni-droplet"></i>
+                        </div>
+                        <div class="services_content">
+                            <h4 class="title">Líquidos Penetrantes</h4>
+                            <p>Inspección de soldaduras en acero al carbón, aceros inoxidables, aluminio, etc. antes, durante y después de su aplicación, soldaduras en servicio de estructuras tubulares y no tubulares.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_services mt-50 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.4s">
+                        <div class="services_icon">
+                            <i class="lni lni-flash"></i>
+                        </div>
+                        <div class="services_content">
+                            <h4 class="title">Corrientes EDDY</h4>
+                            <p>Inspección de soldaduras en acero al carbón e inoxidables, soldaduras en servicio de estructuras tubulares y no tubulares, componentes de grúas, herramientas de perforación, etc. para la detección de grietas superficiales e imperfecciones planas cercanas a la superficie.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_services mt-50 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.7s">
+                        <div class="services_icon">
+                            <i class="lni lni-test-tube"></i>
+                        </div>
+                        <div class="services_content">
+                            <h4 class="title">Pruebas Hidrostáticas</h4>
+                            <p>PND de Hermeticidad para obtener información de la capacidad de un recipiente para contener fluidos a presión, incluyendo Pruebas de Fuga, Cambio de Presión (Neumática o hidrostática), Pruebas de Burbuja y Pruebas con Espectrómetro de Masas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7 -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_services mt-50 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="2s">
+                        <div class="services_icon">
+                            <i class="lni lni-eye"></i>
+                        </div>
+                        <div class="services_content">
+                            <h4 class="title">Inspección Visual</h4>
+                            <p>Nuestro personal está calificado para realizar inspección antes, durante y después de la soldadura, verificando dimensiones, preparación de biseles y utilizando equipos de inspección visual para evaluar discontinuidades o defectos localizados.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8 -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_services mt-50 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="2.3s">
+                        <div class="services_icon">
+                            <i class="lni lni-diving"></i>
+                        </div>
+                        <div class="services_content">
+                            <h4 class="title">Buceo Industrial</h4>
+                            <p>Inspección visual y metrología submarina con/sin video para la detección de daños evidentes y verificación del estado de recubrimiento anticorrosivo en embarcaciones e instalaciones submarinas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9 -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_services mt-50 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="2.6s">
+                        <div class="services_icon">
+                            <i class="lni lni-ultrasound"></i>
+                        </div>
+                        <div class="services_content">
+                            <h4 class="title">Inspección Submarina</h4>
+                            <p>Detección de discontinuidades como fallas por fatiga, verificación de soldaduras y materiales en embarcaciones e instalaciones submarinas utilizando ultrasonido y partículas magnéticas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10 -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_services mt-50 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="2.9s">
+                        <div class="services_icon">
+                            <i class="lni lni-clean"></i>
+                        </div>
+                        <div class="services_content">
+                            <h4 class="title">Limpieza Submarina</h4>
+                            <p>Limpieza de crecimiento marino en cascos y embarcaciones para mejorar el acabado de la superficie y mantener la eficiencia de las estructuras.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11 -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_services mt-50 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="3.2s">
+                        <div class="services_icon">
+                            <i class="lni lni-climbing"></i>
+                        </div>
+                        <div class="services_content">
+                            <h4 class="title">Trabajo en Alturas</h4>
+                            <p>Aplicación de técnicas de Rope Access para desplazamiento seguro en espacios verticales, acceso a áreas difíciles sin andamiaje y reducción de costos. Complementario a servicios de pruebas no destructivas en alturas de 3 a 30+ metros.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== GALLERY PART ENDS ======-->
+    
+    <!--====== COUNTER PART START ======-->
+
+    <section id="counter" class="counter_area bg_cover pt-120 pb-130" style="background-image: url(assets/images/counter.jpg)">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section_title section_title_2 text-center pb-25">
+                        <h4 class="title">Nuestros Logros<br> en Números</h4>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <!-- Clientes Felices -->
+                <div class="col-lg-3 col-sm-3 col-6">
+                    <div class="single_counter text-center mt-30 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                        <div class="counter_icon">
+                            <i class="lni lni-happy"></i>
+                        </div>
+                        <div class="counter_content">
+                            <span>1250</span>
+                            <p>Clientes Satisfechos</p>
+                        </div>
+                    </div> <!-- single counter -->
+                </div>
+
+                <!-- Proyectos Realizados -->
+                <div class="col-lg-3 col-sm-3 col-6">
+                    <div class="single_counter text-center mt-30 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                        <div class="counter_icon">
+                            <i class="lni lni-checkmark-circle"></i>
+                        </div>
+                        <div class="counter_content">
+                            <span>342</span>
+                            <p>Proyectos Completados</p>
+                        </div>
+                    </div> <!-- single counter -->
+                </div>
+
+                <!-- Personal Calificado -->
+                <div class="col-lg-3 col-sm-3 col-6">
+                    <div class="single_counter text-center mt-30 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.6s">
+                        <div class="counter_icon">
+                            <i class="lni lni-users"></i>
+                        </div>
+                        <div class="counter_content">
+                            <span>48</span>
+                            <p>Inspectores Calificados</p>
+                        </div>
+                    </div> <!-- single counter -->
+                </div>
+
+                <!-- Certificaciones / Premios -->
+                <div class="col-lg-3 col-sm-3 col-6">
+                    <div class="single_counter text-center mt-30 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                        <div class="counter_icon">
+                            <i class="lni lni-cup"></i>
+                        </div>
+                        <div class="counter_content">
+                            <span>15</span>
+                            <p>Certificaciones Obtenidas</p>
+                        </div>
+                    </div> <!-- single counter -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== COUNTER PART ENDS ======-->
+
+    <!--====== CONTACT PART START ======-->
+
+    <section id="contact" class="contact_area pt-80 pb-130">
+        <div class="container">
+            <div class="row">
+                <!-- Formulario de contacto -->
+                <div class="col-lg-6">
+                    <div class="contact_form mt-40 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        <div class="section_title pb-25">
+                            <h4 class="title">Ponte en Contacto</h4>
+                        </div> <!-- section title -->
+                        
+                        <form id="contact-form" action="assets/contact.php" method="post">
+                            <div class="single_form">
+                                <input name="name" type="text" placeholder="Nombre">
+                            </div> <!-- single form -->
+                            
+                            <div class="single_form">
+                                <input name="email" type="email" placeholder="Correo electrónico">
+                            </div> <!-- single form -->
+                            
+                            <div class="single_form">
+                                <input name="subject" type="text" placeholder="Asunto">
+                            </div> <!-- single form -->
+                            
+                            <div class="single_form">
+                                <input name="number" type="text" placeholder="Teléfono">
+                            </div> <!-- single form -->
+                            
+                            <div class="single_form">
+                                <textarea name="message" placeholder="Mensaje"></textarea>
+                            </div> <!-- single form -->
+                            
+                            <p class="form-message"></p>
+                            
+                            <div class="single_form">
+                                <button class="main-btn">ENVIAR MENSAJE</button>
+                            </div> <!-- single form -->
+                        </form>
+                    </div> <!-- contact form -->
+                </div>
+
+                <!-- Información de contacto -->
+                <div class="col-lg-6">
+                    <div class="contact_info mt-40 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        <div class="section_title pb-25">
+                            <h4 class="title">Nuestros Contactos</h4>
+                        </div> <!-- section title -->
+                        <p>Puedes comunicarte con nosotros en cualquiera de nuestras sucursales, estamos listos para atenderte.</p>
+                        
+                        <!-- Cd. Madero, Tamaulipas -->
+                        <div class="single_info d-flex align-items-center">
+                            <div class="info_icon">
+                                <i class="lni lni-map"></i>
+                            </div>
+                            <div class="info_content media-body">
+                                <p>Pénjamos 811, Col. Hidalgo Oriente, 89570, Cd. Madero, Tamaulipas</p>
+                            </div>
+                        </div>
+
+                        <div class="single_info d-flex align-items-center">
+                            <div class="info_icon">
+                                <i class="lni lni-phone"></i>
+                            </div>
+                            <div class="info_content media-body">
+                                <p>833-227-1657 | 833-125-5449</p>
+                            </div>
+                        </div>
+
+                        <div class="single_info d-flex align-items-center">
+                            <div class="info_icon">
+                                <i class="lni lni-envelope"></i>
+                            </div>
+                            <div class="info_content media-body">
+                                <p>contacto@famadi.com.mx | famadi.tm@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <!-- Cd. del Carmen, Campeche -->
+                        <div class="single_info d-flex align-items-center mt-3">
+                            <div class="info_icon">
+                                <i class="lni lni-map"></i>
+                            </div>
+                            <div class="info_content media-body">
+                                <p>Hojalateros Lote 4 Mza 7, Col. Renovación 3a. Sección 24155, Cd. del Carmen, Campeche</p>
+                            </div>
+                        </div>
+
+                        <div class="single_info d-flex align-items-center">
+                            <div class="info_icon">
+                                <i class="lni lni-phone"></i>
+                            </div>
+                            <div class="info_content media-body">
+                                <p>938-118-1763 | 938-381-7888</p>
+                            </div>
+                        </div>
+
+                        <div class="single_info d-flex align-items-center">
+                            <div class="info_icon">
+                                <i class="lni lni-envelope"></i>
+                            </div>
+                            <div class="info_content media-body">
+                                <p>contacto@famadi.com.mx | comprasyventas.famadi@gmail.com</p>
+                            </div>
+                        </div>
+
+                    </div> <!-- contact info -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== CONTACT PART ENDS ======-->
+
+    
+    <!--====== FOOTER PART START ======-->
+
+    <section class="footer_area bg_cover" style="background-image: url(assets/images/footer_bg.jpg)">
+        <div class="container">
+            <div class="footer_widget pt-80 pb-130">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer_about mt-50">
+                            <a href="#"><img src="assets/images/logo.png" alt="logo"></a>
+                            <!-- <p>Lorem ipsum dolor sit consetetur sadipscing elitr, sed diamnonumy eirmod tempor inidunt ut labore et dolore. Lorem ipsum dolor sit consetetur sadipscing elitr, sed diamnonumy eirmod tempor inidunt ut labore et dolore.</p> -->
+                        </div> <!-- footer about -->
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="footer_link_wrapper d-flex flex-wrap">
+                            <div class="footer_link mt-45">
+                                <h4 class="footer_title">Socials</h4>
+                                <ul class="link">
+                                    <li><a href="#">Facebook</a></li>
+                                    <li><a href="#">Twitter</a></li>
+                                    <li><a href="#">Instageam</a></li>
+                                    <li><a href="#">Linkdin</a></li>
+                                    <li><a href="#">Pintarest</a></li>
+                                </ul>
+                            </div> <!-- footer link -->
+                        </div> <!-- footer link wrapper -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- footer widget -->
+            <div class="footer_copyright text-center">
+                <p>Designed and Developed by <a href="https://paketartes.com" rel="nofollo">PaketArtes</a></p>
+            </div>
+        </div> <!-- container -->
+    </section>
+
+    <!--====== FOOTER PART ENDS ======-->
+    
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+
+    <!--====== Jquery js ======-->
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    
+    <!--====== Scrolling Nav js ======-->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+    
+    <!--====== WOW js ======-->
+    <script src="assets/js/wow.min.js"></script>
+
+
+    
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+    
 </body>
+
 </html>
