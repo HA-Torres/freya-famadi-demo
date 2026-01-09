@@ -11,9 +11,9 @@ services:
 
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.showroom.rule=Host(`famadi-demo.paketartes.com`)"
-      - "traefik.http.routers.showroom.entrypoints=websecure"
-      - "traefik.http.routers.showroom.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.showroom-famadi.rule=Host(`famadi-demo.paketartes.com`)"
+      - "traefik.http.routers.showroom-famadi.entrypoints=websecure"
+      - "traefik.http.routers.showroo-famadi.tls.certresolver=letsencrypt"
 
     networks:
       - traefik
