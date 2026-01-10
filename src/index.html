@@ -13,7 +13,9 @@
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
         
-        
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+
     <!--====== Animate CSS ======-->
     <link rel="stylesheet" href="assets/css/animate.css">
         
@@ -388,55 +390,72 @@
 
     <!--====== GALLERY PART ENDS ======-->
     
-    <!--====== FEATURES PART START ======-->
+<!--====== FEATURES PART START ======-->
 
-    <section id="acreditaciones" class="features_area pt-100 pb-130">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="section_title">
-                        <h4 class="title">Acreditaciones</h4>
+<section id="acreditaciones" class="features_area pt-100 pb-130">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section_title">
+                    <h4 class="title">Acreditaciones</h4>
+                </div>
+            </div>
+        </div> <!-- row -->
+
+        <div class="row">
+            <!-- Acreditación 1 -->
+            <div class="col-lg-4 col-md-4">
+                <div class="single_features text-center mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                    <div class="features_image">
+                        <a href="assets/images/c-abs.png" class="glightbox" data-title="In-Water Survey">
+                            <img src="assets/images/c-abs.png" alt="In-Water Survey">
+                        </a>
                     </div>
-                </div>
-            </div> <!-- row -->
-            <div class="row">
+                    <div class="features_content">
+                        <h4 class="features_title"><a href="#services">In-Water Survey</a></h4>
+                    </div>
+                </div> <!-- single features -->
+            </div>
 
-            <div class="row">
-                <div class="col-lg-4 col-md-4">
-                    <div class="single_features text-center mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
-                        <div class="features_image">
-                            <img src="assets/images/c-abs.png" alt="features">
-                        </div>
-                        <div class="features_content">
-                            <h4 class="features_title"><a href="#services">In-Water Survey</a></h4>
-                        </div>
-                    </div> <!-- single features -->
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="single_features text-center mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                        <div class="features_image">
-                            <img src="assets/images/c-abs2.png" alt="features">
-                        </div>
-                        <div class="features_content">
-                            <h4 class="features_title"><a href="#services">Hull Gauging</a></h4>
-                        </div>
-                    </div> <!-- single features -->
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="single_features text-center mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
-                        <div class="features_image">
-                            <img src="assets/images/c-dnv.png" alt="features">
-                        </div>
-                        <div class="features_content">
-                            <h4 class="features_title"><a href="#services">Thickness Measurements</a></h4>
-                        </div>
-                    </div> <!-- single features -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
+            <!-- Acreditación 2 -->
+            <div class="col-lg-4 col-md-4">
+                <div class="single_features text-center mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                    <div class="features_image">
+                        <a href="assets/images/c-abs2.png" class="glightbox" data-title="Hull Gauging">
+                            <img src="assets/images/c-abs2.png" alt="Hull Gauging">
+                        </a>
+                    </div>
+                    <div class="features_content">
+                        <h4 class="features_title"><a href="#services">Hull Gauging</a></h4>
+                    </div>
+                </div> <!-- single features -->
+            </div>
 
-    <!--====== FEATURES PART ENDS ======-->
+            <!-- Acreditación 3 -->
+            <div class="col-lg-4 col-md-4">
+                <div class="single_features text-center mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                    <div class="features_image">
+                        <a href="assets/images/c-dnv.png" class="glightbox" data-title="Thickness Measurements">
+                            <img src="assets/images/c-dnv.png" alt="Thickness Measurements">
+                        </a>
+                    </div>
+                    <div class="features_content">
+                        <h4 class="features_title"><a href="#services">Thickness Measurements</a></h4>
+                    </div>
+                </div> <!-- single features -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</section>
+
+<!--====== FEATURES PART ENDS ======-->
+
+<!-- Inicializa GLightbox -->
+<script>
+const lightbox = GLightbox({
+    selector: '.glightbox'
+});
+</script>
 
     <!--====== COUNTER PART START ======-->
 
@@ -644,7 +663,8 @@
     <!--====== WOW js ======-->
     <script src="assets/js/wow.min.js"></script>
 
-
+    <!-- GLightbox JS -->
+    <script src="assets/js/glightbox.min.js"></script>
     
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
