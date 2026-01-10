@@ -11,16 +11,37 @@ $(function() {
 
     //===== Sticky
 
+    // $(window).on('scroll', function (event) {
+    //     var scroll = $(window).scrollTop();
+    //     if (scroll < 20) {
+    //         $(".header_navbar").removeClass("sticky");
+    //         $(".header_navbar img").attr("src", "assets/images/logo.png");
+    //     } else {
+    //         $(".header_navbar").addClass("sticky");
+    //         $(".header_navbar img").attr("src", "assets/images/logo-dark.png");
+    //     }
+    // });
+
     $(window).on('scroll', function (event) {
-        var scroll = $(window).scrollTop();
-        if (scroll < 20) {
-            $(".header_navbar").removeClass("sticky");
-            $(".header_navbar img").attr("src", "assets/images/logo.png");
-        } else {
-            $(".header_navbar").addClass("sticky");
-            $(".header_navbar img").attr("src", "assets/images/logo-dark.png");
-        }
-    });
+    var scroll = $(window).scrollTop();
+
+    if (scroll < 20) {
+        $(".header_navbar").removeClass("sticky");
+        $(".header_navbar img").attr("src", "assets/images/logo.png");
+        $(".header_navbar img").css({
+            "width": "600px",   // tamaño más grande para logo.png
+            "height": "auto"
+        });
+    } else {
+        $(".header_navbar").addClass("sticky");
+        $(".header_navbar img").attr("src", "assets/images/logo-dark.png");
+        $(".header_navbar img").css({
+            "width": "120px",   // tamaño normal para logo-dark.png
+            "height": "auto"
+        });
+    }
+});
+
 
 
     //===== Section Menu Active
