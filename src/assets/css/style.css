@@ -53,7 +53,10 @@ a {
   display: inline-block; }
 
 a, a:hover {
-  color: #FBFA09; }
+  color: #340e70; }
+
+.blue-text {
+  color: #340e70; }
 
 audio,
 canvas,
@@ -827,11 +830,11 @@ p {
       height: 100%;
       left: -45px;
       top: 0;
-      background-color: #FBFA09; }
+      background-color: #340e70; }
     .about_content .sub_title span {
       font-size: 70px;
       font-weight: 800;
-      color: #828180; }
+      color: #FBFA09; }
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
         .about_content .sub_title span {
           font-size: 60px; } }
